@@ -6,12 +6,15 @@
     <title>SOI Contabilidad </title>
     <link rel="shortcut icon" href="../imagenes/soi logo letra blanca.png">
     <link rel="stylesheet" href="../css/style_index2.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="Contenedor__general">
         <header class="header">
-            <div class="ajuste__imagen">
-                <img src="../imagenes/logo soi.png" alt="LOGO">
+            <div data-aos="fade-up-right">
+                <div class="ajuste__imagen">
+                    <img src="../imagenes/logo soi.png" alt="LOGO">
+                </div>
             </div>
             <nav class="Menu">
                 <div class="titulo">
@@ -72,15 +75,20 @@
         </div>
         <main class="main">
             <section class="grid">
-                <div class="ajuste__imagen">
-                    <img class="imagen" src="../imagenes/mba-finanzas-corporativas.jpg" alt="">
+                <div data-aos="zoom-out-right">
+                    <div class="ajuste__imagen">
+                        <img class="imagen" src="../imagenes/mba-finanzas-corporativas.jpg" alt="">
+                    </div>
                 </div>
-                <div class="ajuste__imagen">
-                    <img class="imagen" src="../imagenes/contabilidad.png" alt="">
+                <div data-aos="flip-right">
+                    <div class="ajuste__imagen sistema">
+                        <img class="imagen" src="../imagenes/contabilidad.png" alt="">
+                    </div>
                 </div>
-                
-                <div class="ajuste__imagen">
-                    <img class="imagen" src="../imagenes/administracion-objetivos-696x341.jpg" alt="">
+                <div data-aos="zoom-out-left">
+                    <div class="ajuste__imagen">
+                        <img class="imagen" src="../imagenes/administracion-objetivos-696x341.jpg" alt="">
+                    </div>
                 </div>
             </section>
         </main>
@@ -128,5 +136,9 @@
             </section>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -7,13 +7,14 @@
     <link rel="shortcut icon" href="./imagenes/soi logo letra blanca.png">
     <link rel="stylesheet" href="./css/style_index2.css">
     <link href="http://fonts.cdnfonts.com/css/poetsen-one" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body> 
     <div class="Contenedor__general">
         <header class="header">
             <div class="ajuste__imagen">
-                <img src="./imagenes/logo soi.png" alt="LOGO">
+                <img class="animate__animated animate__tada" src="./imagenes/logo soi.png" alt="LOGO">
             </div>
             <nav class="Menu">
                 <div class="titulo">
@@ -72,24 +73,24 @@
         <main class="main">    
             <section class="grid">
                 <div class="ajuste__imagen">
-                    <a href="./paginas/equipos_y_refacciones.html"> <img class="imagen" src="./imagenes/refacciones.jpg" alt="EQUIPOS Y REFACCIONES"></a>
+                    <a class="imagen__de_pagina" href="./paginas/equipos_y_refacciones.html"> <img class="imagen" src="./imagenes/refacciones.jpg" alt="EQUIPOS Y REFACCIONES"></a>
                     <a class="botones" href="./paginas/equipos_y_refacciones.html">Equipos y Refacciones</a>
                 </div>
                 <div class="ajuste__imagen">
-                    <a href="./paginas/software.html"> <img class="imagen" src="./imagenes/Integracion y desarrollo.png" alt="SOFTWARE"></a>
+                    <a class="imagen__de_pagina" href="./paginas/software.html"> <img class="imagen" src="./imagenes/Integracion y desarrollo.png" alt="SOFTWARE"></a>
                     <a class="botones"href="./paginas/software.html"> Software</a>
                 </div>
                 <div class="ajuste__imagen">
-                    <a href="./paginas/aires_ac.html"> <img class="imagen" src="./imagenes/Refrigeracion y aires ac.png" alt="AIRES AC"></a>
+                    <a class="imagen__de_pagina" href="./paginas/aires_ac.html"> <img class="imagen" src="./imagenes/Refrigeracion y aires ac.png" alt="AIRES AC"></a>
                     <a class="botones"href="./paginas/aires_ac.html"> Aires AC</a>
                 </div>
                 <div class="ajuste__imagen">
-                    <a href="./paginas/contabilidad.html"> 
+                    <a class="imagen__de_pagina" href="./paginas/contabilidad.html"> 
                     <img class="imagen" src="./imagenes/contabilidad1.png" alt="CONTABILIDAD"></a>
                     <a class="botones"href="./paginas/contabilidad.html"> Contabilidad</a>
                 </div>
                 <div class="ajuste__imagen">
-                    <a href="./paginas/nosotros.html">
+                    <a class="imagen__de_pagina" href="./paginas/nosotros.html">
                     <img class="imagen" src="./imagenes/Mision1.png" alt="NOSOTROS"></a>
                     <a class="botones"href="./paginas/nosotros.html"> Nosotros</a>
                 </div>
@@ -139,5 +140,9 @@
                 </section>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
