@@ -1,0 +1,17 @@
+[33mcommit 8039e042353a39058bf230d36ecb753aadf8046d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: JJACOBO <soi.sistemas.calidad@gmail.com>
+Date:   Wed Mar 16 23:40:24 2022 -0600
+
+    agregado de animaciones y transformaciones
+
+[33mcommit 0d3c0af306ff0eda24bf923cc1ce817389177aea[m[33m ([m[1;32mmaster[m[33m)[m
+Author: JJACOBO <soi.sistemas.calidad@gmail.com>
+Date:   Wed Mar 16 18:46:27 2022 -0600
+
+    se gregaron todos los archivos del proyecto con sus respectivas pruebas, los importantes son las paginas, tipografias, las imagenes y los css del index, esto solo hasta full responsive
+
+[33mcommit f9a9e147c391e9677e7e990590f3cb323cf76073[m
+Author: JJACOBO <soi.sistemas.calidad@gmail.com>
+Date:   Wed Mar 16 18:44:10 2022 -0600
+
+    se agrego al git solo el index y los css
