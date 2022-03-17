@@ -1,0 +1,53 @@
+*{margin: 0; padding: 0;}
+.contenedor__grid{border: 7px double yellowgreen;
+width: 1200px; height: 700px; background-color: aqua;
+padding: 10px; 
+/* se tiene que declarar grid y no 
+hace nada hasta dar las propiedades */
+display: grid; 
+/* grid-template-columns= tamaño de columna
+grid-template-row=tamaño de fila
+grid-colum-gap=espacio entre columnas
+grid-row-gap=espacion entre filas */
+grid-template-columns: 300px 300px 300px;
+grid-template-rows: 200px 200px 200px;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+/* SE PUEDEN APLICAR ESTAS PROPIEDADES PARA MOVER LAS
+CELDAS COMO SI FUERAN EN FLEX BOX */
+align-items: flex-end;
+align-content: flex-end;
+justify-content: center;
+}
+/* la suma de los espacios "ancho de contenedor primario 
+es de 1200px los contenedores internos el ancho son de 
+3x300px=900px,  le colocamos 2 gaps de columna de 150px, entonces
+suman 900+300 */
+.contenedor__grid div{border: 5px dotted yellowgreen; 
+    background-color: burlywood;
+}
+p{background-color: blue; font-size: 5rem;}
+
+.contenedor__grid-1, .contenedor__grid-4, .contenedor__grid-9{
+    height: 150px;
+}
+.contenedor__grid-2, .contenedor__grid-5, .contenedor__grid-8{
+    height: 120px;
+}
+.contenedor__grid-1{display: flex;flex-direction: column;
+    align-items: center; justify-content: center;}
+.contenedor__grid-2{display: flex;flex-direction: column;
+    align-items: baseline; justify-content: center;}
+.contenedor__grid-3{display: flex;flex-direction: column;
+    align-items: center; justify-content: center;}
+    /* GRID maneja como tablas de celdas con columnas y rengloes, 
+    aun cuando uso grid, podria usar flex dentro de cada celda */
+
+    .pruebas_contenedor{border: 7px double yellowgreen;
+        width: 1200px; height: 700px; background-color: rgb(18, 71, 71);
+        padding: 10px; 
+    display: grid;grid-template-rows: 200px 200px 200px;
+}
+.contenedor__grid-1a{display: flex; align-items: center; justify-content: center;}
+.contenedor_main{display: grid; grid-template-columns:2fr 1fr 1fr;}
+.contenedor__grid-5a{display: flex; align-items: center; justify-content: center;}

@@ -1,0 +1,160 @@
+*{margin: 0;padding: 0;}
+/* se descargaron estas tipografias en la carpeta */
+@font-face {
+    font-family: dodger3_13dital;
+    src: url(../tipografias/dodger3_13dital.ttf);
+}
+@font-face {
+    font-family: Cicle_Shadow ;
+    src: url(../tipografias/Cicle\ Shadow.ttf);
+}
+/* header section{text-align: left; padding: 10px;} */
+/* la propiedad gap, nos dara un espacio
+necesario entre elementos */
+/* la etiqueta "button" es para crear botones, le damos
+propiedades como outline(para quitar la lineade subrayado),
+border (para dar el borde o quitarlo), tambien los botones
+tienen una fuente ya predeterminada, asi que si se requiere
+cambiarla, se tiene que colocarle la nueva fuente al boton*/
+
+/* https://cdnjs.com/libraries/font-awesome (para descargar iconos) */
+/* ES NECESARIO USAR FLEX-WRAP  */
+/* la clase "contenedor general" es para idicar el layout
+the las areas */
+/* .Contenedor__general{display: grid;
+    grid-template-columns: repeat(1fr, 1fr, 1fr);
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";} */
+
+/* mobile */
+/* @media (max-width: 480px ) {
+    header{background-color: blue;
+    }
+    main{background-color: blueviolet;
+        }
+    footer{background-color:crimson;
+    }
+    .contenedor__grid{display: grid;
+        grid-template-columns:1fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer"; */
+}
+/* tablet */
+/* @media (min-width:481px) and (max-width: 1024px ) {
+    header{background-color: rgb(200, 12, 218);
+        height: 100px;
+    }
+    main{background-color: rgb(15, 73, 112);
+        height: 300px;
+    }
+    aside{background-color:rgb(211, 57, 57);
+    }
+    footer{background-color:rgb(112, 85, 25);
+        height: 100px;
+    }
+    .contenedor__grid{display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";} } */
+
+
+header{background-color:dimgray; 
+    display: flex; justify-content: center;
+grid-area: header;}
+/* son propiedades del header  para que se pase por abajo
+de la encabezado como transparecncia
+(backdrop-filter: blur (2px);
+position: sticky;top: 0;)  */
+/* nav img{margin: 10px 30px 10px 10px ;} */
+nav{display:flex; justify-content:end;
+    flex-wrap: wrap; align-items:center;
+padding: 0px 0px 0px 0px;}
+.contenedor__menu{display: flex; flex-direction: row;flex-wrap:wrap;}
+
+/* #menus{text-align:center;font-size: 0;} */
+#menus{margin: 0 10rem 0 0;
+    list-style:none; font-style: oblique;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;}
+#menus li{margin: 3px 3px 3px 3px;padding: 4px; }
+#menus li a{position: relative; font-size:20px;
+    text-decoration: none;padding: 5px 5px 5px 5px;}
+#menus li ul{display:none;
+     position: absolute;}
+#menus li ul li{display: flex; flex-direction: column;
+   margin: 0%;padding:5px 5px 5px 5px;}
+#menus li:hover ul{display:block;}
+
+/* este es ejempo de la clase 4 scroll y hidden auto*/
+
+/* aplicando el margin donde descentro el logo de las paginas */
+
+main{background-color: rgba(0, 255, 55);
+    text-align: center; grid-area: main;}
+main h1{color:blue; padding: 0 25px 10px 25px;}
+main h1{font-family: 'dodger3_13dital', sans-serif;
+    font-weight: 800;font-size: 45px;}
+main h2{color:rgba(156, 21, 21, 0.842);font-weight: bold;
+    padding: 0 25px 10px 25px;}
+main h2{font-family: 'Cicle_Shadow', sans-serif;font-weight:
+    800; font-style:italic; font-size: 30px;}
+main div p {color:blue; font-size:20px;
+    padding: 0 25px 10px 25px;
+    text-align: center;font-weight: 800;}
+main div p{font-family:Courier, monospace;}
+main section {background-color: rgba(0, 255, 55);
+    position: relative;font-family: Courier, monospace;
+    color:blue; font-size:20px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;font-weight: 800;}
+
+.grid{display: grid; justify-items: center; align-items: center;
+     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 400px 350px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;}
+.botones{margin: 0 20% 0 20%; position: relative; bottom: 1rem;
+ padding: 3px;background-color:aqua; border: 3px solid blue;
+ font-size:18px; text-decoration: none;
+ border-radius: 8px; font-family: Calibri; font-weight: 800;}
+
+
+.grid2{display: grid ; justify-items: center; align-items: center;
+    grid-template-columns:repeat(3, 1fr);
+   grid-template-rows: 250px 250px 250px 300px 160px;
+   grid-column-gap: 10px;
+   grid-row-gap: 10px;}
+
+/* main section{display:flex; flex-direction:row; flex-wrap: wrap;
+    align-items:center;justify-content:space-evenly;
+padding-left: 25px;padding-bottom: 10px;}
+main section img{padding-top: 10px ;}  ESTO SE QUITO YA
+QUE EL ACOMODO  DE LAS IMAGENES SE CAMBIO A GRID*/
+
+.imagen{display: flex; flex-direction: row; align-self:center;
+    flex-wrap: wrap; justify-self: center;}    
+
+
+/* .icon{position:fixed; bottom: 18px;right: 45px;}
+.instagram{position: sticky; bottom: 18px;left: 45px;}
+.facebook{position: sticky; bottom: 18px;left: 295px;} */
+
+footer{padding: 15px;background-color:aqua;
+grid-area: footer;}
+footer{display: flex; align-items: flex-start;
+    justify-content:space-between;}
+/* footer div{padding: 1rem;} */
+/* footer div{width: 30%; overflow:scroll;} */
+footer div ul b{color:chocolate}
+footer span{color:orangered; width:30%;
+    font-weight: 600;}
+footer div ul{list-style-type: none;}
+footer div ul li a{text-decoration-line: none;
+     font-weight: 600;font-family: Calibri, 'Trebuchet MS', sans-serif;}
+footer section img{padding-left: 2rem;}

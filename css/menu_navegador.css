@@ -1,0 +1,14 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+@font-face {
+    font-family: Circus;
+    src: url(../tipografias/Circus\ Of\ Innocents.ttf);}
+body{font-family: Circus;}
+header{padding: 1rem; display: flex;background-color: black;
+    justify-content:space-evenly; align-items:flex-start;}
+.header_section{display:flex;gap: 30%; padding:8px 16px; }
+.header_section div a{text-decoration-line: none; color: aliceblue; }
+.header_section div ul li{list-style-type: none;}
+.titulo {position: relative;}
+.titulo ul{position:absolute; display: none;}
+.titulo:hover ul{display:block;}
+

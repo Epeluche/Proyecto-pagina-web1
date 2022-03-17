@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  @font-face {
+    font-family: dodger3_13dital;
+    src: url(../tipografias/dodger3_13dital.ttf);
+}
+@font-face {
+    font-family: Cicle_Shadow ;
+    src: url(../tipografias/Cicle\ Shadow.ttf);
+}
+h1{background-color: rgb(19, 88, 28);color: azure; 
+  padding: 4px; border: 3px solid rgb(62, 62, 68);
+  border-radius: 8px;
+  font-family: dodger3_13dital;;}
+h2{color: rgb(154, 154, 226);
+  background-color: darkslategray;text-align: center; }
+
+.container__row div p{background-color: rgb(159, 211, 170); 
+    width: 200px;height: 200px;
+    margin: 10px;
+    border: 5px solid rgb(62, 62, 68);
+    border-radius: 8px;
+    font-family: 'Courier New';font-size: 5rem;
+    font-weight: bold;text-align: center;}
+div section{border: solid;border-style: dotted;}
+.container__row{display:flex;flex-flow: row-reverse wrap-reverse; 
+  justify-content:space-around;
+align-content: space-around;}
+/* se podria colocar en lugar flex-flow, se colocan en 2 propiedades
+Flex-direction:row; flex-wrap:wrap */
+
+.container__row div p{
+  display:flex; flex-direction: column; 
+  align-items: center; justify-content: center;
+}
+
+.container__column div p{background-color: rgb(133, 154, 212); 
+  width: 200px;height: 200px;
+  margin: 10px;
+  border: 5px solid rgb(62, 62, 68);
+  border-radius: 8px;
+  font-family: 'Courier New';font-size: 5rem;
+  font-weight: bold;text-align: center;}
+.container__column{display: flex; 
+  flex-direction: column-reverse;
+  align-items:center;
+}
