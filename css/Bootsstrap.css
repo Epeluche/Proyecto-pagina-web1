@@ -1,0 +1,12 @@
+*{margin: 0;padding: 0;}
+/* se descargaron estas tipografias en la carpeta */
+@font-face {
+    font-family: dodger3_13dital;
+    src: url(../tipografias/dodger3_13dital.ttf);
+}
+@font-face {
+    font-family: Cicle_Shadow ;
+    src: url(../tipografias/Cicle\ Shadow.ttf);
+}
+.ajuste__imagen1{width: 0.2fr;height:0.2fr;}
+.ajuste__imagen1 .imagen{width:20%; height:20%; object-fit: contain;}
