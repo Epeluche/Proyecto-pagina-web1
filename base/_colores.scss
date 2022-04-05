@@ -1,0 +1,13 @@
+$color-principal:darkgray;
+$color_secundario: darkblue;
+$color-terciario: rgb(199, 139, 19);
+
+// tambien podriamos crear clases especcificas para algunos elementos
+// donde le demos las caracteristicas
+// se crearon clases inventadas para usar las palabras reservadas
+// darken lighten  mix y saturate, para ver como cambian los colores
+.btn_menu{border: 2px solid darken($color-terciario, 20%);
+&:hover{background-color: lighten($color-principal, 40%);}
+}
+.fondo_footer {background-color:mix($color-principal, $color-terciario, 80%) ;}
+.titulos{ color: saturate($color-secundario, 10%);}

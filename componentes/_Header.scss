@@ -1,0 +1,14 @@
+@import "../base/variables"; 
+@import "../base/colores";
+
+.header{display: flex; flex-direction: row; background-color: $bg; justify-content: space-between;
+    div{padding: 0.5rem 1rem;font-size: $fs;}
+    .animate__animated.animate__tada {--animate-duration: 3s;}
+    nav{
+        div{
+            // no cambia el color por las clases de bootstrap
+            a{color: $fc;&:hover{text-decoration:underline;background-color: lighten($color-secundario, 35%); border-radius: 3px};} 
+
+        }
+    }
+}

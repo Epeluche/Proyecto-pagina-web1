@@ -1,0 +1,23 @@
+@import "../base/variables"; 
+@import "../base/colores";
+.footer{margin: 0;padding: 10px 10px 10px 10px; align-items: center;background-color: $bg2;justify-content: center;
+    div{
+        ul{list-style-type: none; font-size: 1.2fr;
+            b{color:$fc3;}
+            li{
+                a{text-decoration-line: none;
+                    color:$fc2;font-weight: 600;
+                    font-family: Calibri, 'Trebuchet MS', sans-serif;
+                }
+            }
+        }
+    }
+    span{font-size: 1.2fr; color:$fc3;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    }
+    section{justify-content: space-evenly;padding: 0.3rem 0.5rem 0.3rem 0.3rem;
+        .logos{width:40%; height:40%; object-fit: contain;}
+        .icon{width:20%; height:20%; object-fit: contain;}
+        .ajuste__imagen{width:0.8fr;height:0.8fr;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+@import "../base/variables"; 
+@import "../base/colores";
+@font-face {
+    font-family: dodger3_13dital;
+    src: url(../tipografias/dodger3_13dital.ttf);
+}
+@font-face {
+    font-family: Cicle_Shadow ;
+    src: url(../tipografias/Cicle\ Shadow.ttf);
+}
+.inform{background-color: $bg2;
+        span{justify-content: center; align-items: center;
+            h1{font-family: 'dodger3_13dital', sans-serif;
+                font-weight: 800;font-size: 3em;color:darkgrey;
+                text-align: center;}
+            h2{font-family: 'Cicle_Shadow', sans-serif;font-weight:$fw;
+                font-style:italic; font-size: 2.5em; padding: 0 25px 10px 25px; color:cyan;
+                text-align: center;}
+            p{font-size: 1.1em; font-family:Courier, monospace; margin-bottom: 0;
+                padding: 0 25px 10px 25px; text-align: center; color: dimgrey;
+                font-weight:$fw;}
+            }
+    }
+.main{
+    section{padding:1rem 1rem 1rem 1rem; align-items: center; justify-content: center;margin: 0;background-color: $bg;
+    }
+    .ajuste__imagen{width:0.8fr;height:0.8fr;
+        .imagen{width:95%; height:95%; object-fit: contain; &:hover{transform:scale(1.1);}; padding: 0.7rem 0.7rem 0.7rem 0.7rem;};}
+        div{display: flex; flex-direction: column; justify-items: center;
+            .botones{margin: 1% 8% 0 8%; background-color:$bg2; color:$fc2;
+                font-size:1.2rem; text-decoration: none; text-align: center;
+                border-radius: 0.5rem; font-family: Calibri; font-weight: 800;}
+        }
+}
+@media (max-width: 480px ) {
+    .inform{
+        span{
+            h1{font-size: 1.5rem;
+            }
+            h2{font-size: 1.3rem;
+            }
+            p{font-size: 1rem;
+            }
+        }
+    }
+}
+@media (min-width: 481px ) and (max-width:768px ) {
+    .inform{
+        span{
+            h1{font-size: 1.9rem;
+            }
+            h2{font-size: 1.6rem;
+            }
+            p{font-size: 1.3rem;
+            }
+        }
+    }
+}
+@media (min-width: 769px ) and (max-width:992px ) {
+    .inform{
+        span{
+            h1{font-size: 2rem;
+            }
+            h2{font-size: 1.8rem;
+            }
+            p{font-size: 1.1rem;
+            }
+        }
+    }
+}
+@media (min-width: 992px ) and (max-width:1200px ) {
+    .inform{
+        span{
+            h1{font-size: 2.2rem;
+            }
+            h2{font-size: 1.9rem;
+            }
+            p{font-size: 1.1rem;
+            }
+        }
+    }
+}
